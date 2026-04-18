@@ -17,7 +17,7 @@ import ShortcutsHelp  from './components/ShortcutsHelp'
 
 import styles from './styles/App.module.css'
 
-// ─── Seed blocks shown on first load ─────────────────────────────────────────
+// ─── Seed blocks shown on first load 
 
 const SEED_BLOCKS = [
   {
@@ -45,7 +45,7 @@ const SEED_BLOCKS = [
   },
 ]
 
-// ─── App ──────────────────────────────────────────────────────────────────────
+// ─── App 
 
 export default function App() {
   const [blocks, setBlocks]     = useLocalStorage('pagecraft_blocks_v1', SEED_BLOCKS)
@@ -53,7 +53,7 @@ export default function App() {
   const [preview, setPreview]   = useState(false)
   const { message, showToast }  = useToast()
 
-  // ── Block CRUD ──────────────────────────────────────────────────────────────
+  // ── Block CRUD 
 
   const addBlock = useCallback((type, atIndex) => {
     const newBlock = {
@@ -122,17 +122,17 @@ export default function App() {
     showToast('Canvas cleared')
   }, [setBlocks, showToast])
 
-  // ── Drag & drop ─────────────────────────────────────────────────────────────
+  // ── Drag & drop 
 
   const { paletteDragStart, canvasDragStart, onDragOver, onDropAtIndex, onDropOnCanvas } =
     useDragDrop(addBlock, moveBlock)
 
-  // ── Derived state ────────────────────────────────────────────────────────────
+  // ── Derived state 
 
   const selectedBlock = blocks.find((b) => b.id === selectedId) ?? null
   const selectedIndex = blocks.findIndex((b) => b.id === selectedId)
 
-  // ── Keyboard shortcuts ───────────────────────────────────────────────────────
+  // ── Keyboard shortcuts
 
   useKeyboardShortcuts({
     hasSelection:    selectedIndex !== -1,
@@ -144,7 +144,7 @@ export default function App() {
     onTogglePreview: () => setPreview((p) => !p),
   })
 
-  // ── Render ───────────────────────────────────────────────────────────────────
+  // ── Render 
 
   return (
     <div className={styles.root}>

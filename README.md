@@ -2,17 +2,16 @@
 
 PageCraft is a modern drag-and-drop content builder that allows users to create and customize a personal webpage in real time. It provides a clean and interactive interface where users can add, arrange, and edit different types of content blocks easily.
 
----
 
-## 🚀 Overview
+
+## Overview
 
 PageCraft is designed to simulate a lightweight version of tools like Notion or Webflow. It focuses on simplicity, usability, and real-time editing without requiring any backend.
 
 Users can build a page visually by dragging components onto a canvas and configuring them instantly.
 
----
 
-## ✨ Features
+##  Features
 
 - Drag and drop content blocks
 - Multiple block types (Header, Text, Image, Markdown, Divider, Quote)
@@ -23,9 +22,9 @@ Users can build a page visually by dragging components onto a canvas and configu
 - Keyboard shortcuts for quick actions
 - Clean and minimal UI
 
----
 
-## 🧱 Block Types
+
+## Block Types
 
 - Header
 - Rich Text
@@ -36,9 +35,9 @@ Users can build a page visually by dragging components onto a canvas and configu
 
 Each block has its own editable properties like text, alignment, color, etc.
 
----
 
-## 🖥️ UI Layout
+
+## UI Layout
 
 The application follows a three-panel layout:
 
@@ -52,9 +51,9 @@ The application follows a three-panel layout:
 3. Right Panel (Config Panel)
    - Shows settings for selected block
 
----
 
-## 🔄 Core Functionalities
+
+##  Core Functionalities
 
 ### Add Block
 Drag a block from the palette and drop it onto the canvas.
@@ -73,24 +72,24 @@ Clone an existing block with one click.
 
 ---
 
-## 👁️ Preview Mode
+##  Preview Mode
 
 - Switch to preview mode to view final output
 - Removes all editing UI
 - Shows clean content layout
 
----
 
-## 💾 Data Persistence
+
+##  Data Persistence
 
 - Uses localStorage
 - Saves all changes automatically
 - No backend required
 - Data remains after page refresh
 
----
 
-## ⌨️ Keyboard Shortcuts
+
+##  Keyboard Shortcuts
 
 - Delete → Remove block
 - Ctrl + D → Duplicate block
@@ -98,9 +97,9 @@ Clone an existing block with one click.
 - Ctrl + ↓ → Move block down
 - Ctrl + P → Toggle preview
 
----
 
-## ⚙️ State Management
+
+##  State Management
 
 - All state stored in root component
 - Uses React hooks
@@ -110,9 +109,9 @@ Clone an existing block with one click.
   - type
   - data
 
----
 
-## 🧩 Component Structure
+
+##  Component Structure
 
 - App.jsx (Main state)
 - Topbar.jsx
@@ -123,18 +122,18 @@ Clone an existing block with one click.
 - PreviewCanvas.jsx
 - Toast.jsx
 
----
 
-## 🔗 Custom Hooks
+
+##  Custom Hooks
 
 - useLocalStorage → persistence
 - useDragDrop → drag & drop logic
 - useKeyboardShortcuts → shortcuts
 - useToast → notifications
 
----
 
-## 📁 Project Structure
+
+##  Project Structure
 
 
 src/
@@ -148,9 +147,9 @@ src/
 
 
 
----
 
-## 🛠️ Tech Stack
+
+##  Tech Stack
 
 - React 18
 - Vite
@@ -158,9 +157,9 @@ src/
 - HTML5 Drag and Drop API
 - localStorage
 
----
 
-## 🎯 Design Approach
+
+## Design Approach
 
 - Minimal and clean UI
 - Editorial-style typography
@@ -168,46 +167,21 @@ src/
 - Smooth interactions
 - Clear visual feedback
 
----
 
-## ➕ Adding New Block
 
-Steps:
 
-1. Add block in blockTypes.js
-2. Create new component
-3. Register in BLOCK_RENDERERS
-4. Add config UI
-
----
-
-## 📌 Key Highlights
-
-- No external drag-drop library used
-- No backend required
-- Fast performance with Vite
-- Fully component-based architecture
-- Easy to extend and maintain
-
----
-
-## 🧪 Future Improvements
-
-- Backend integration
-- User authentication
-- Export as HTML/PDF
-- More block types
-- Theme customization
-
----
-
-## 📷 Demo
+##  Demo
 
 Live Demo:
-https://pagecraft.netlify.app
+https://pagecraftplatform.netlify.app/
 
----
+GitHub:
+https://github.com/rohansingh64/PageCraft
 
-## 📄 Conclusion
 
-PageCraft is a powerful yet simple content builder that demonstrates strong frontend skills, clean architecture, and user-focused design. It showcases real-world implementation of drag-and-drop systems, state management, and UI/UX principles.
+
+## Conclusion
+
+PageCraft is a powerful yet simple content builder that demonstrates strong frontend skills, clean architecture, and
+user-focused design. It showcases real-world implementation of drag-and-drop systems, state management, and UI/UX
+principles.

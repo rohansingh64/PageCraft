@@ -1,7 +1,3 @@
-/**
- * Parses a minimal subset of Markdown to HTML.
- * Handles: headings, bold, italic, inline code, blockquotes, unordered lists.
- */
 export function parseMarkdown(src) {
   return src
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
@@ -16,10 +12,7 @@ export function parseMarkdown(src) {
     .replace(/\n\n/g, '<br/><br/>')
 }
 
-/**
- * Parses inline formatting only: bold, italic, inline code.
- * Safe to use inside rendered text blocks.
- */
+
 export function parseInline(text) {
   return text
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
@@ -27,9 +20,7 @@ export function parseInline(text) {
     .replace(/`(.+?)`/g, '<code>$1</code>')
 }
 
-/**
- * Generates a short random ID for new blocks.
- */
+
 export function uid() {
   return Math.random().toString(36).slice(2, 9)
 }

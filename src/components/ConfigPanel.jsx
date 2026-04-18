@@ -1,6 +1,6 @@
 import styles from '../styles/ConfigPanel.module.css'
 
-// ─── Reusable field wrapper ───────────────────────────────────────────────────
+//  Reusable field wrapper 
 
 function Field({ label, children }) {
   return (
@@ -11,7 +11,7 @@ function Field({ label, children }) {
   )
 }
 
-// ─── Per-type config forms ────────────────────────────────────────────────────
+//  Per-type config forms 
 
 function HeaderConfig({ data, update }) {
   return (
@@ -196,7 +196,7 @@ function QuoteConfig({ data, update }) {
   )
 }
 
-// ─── Config form registry ─────────────────────────────────────────────────────
+//  Config form registry 
 
 const CONFIG_FORMS = {
   header:   HeaderConfig,
@@ -207,7 +207,7 @@ const CONFIG_FORMS = {
   quote:    QuoteConfig,
 }
 
-// ─── Public component ─────────────────────────────────────────────────────────
+//  Public component 
 
 export default function ConfigPanel({ block, onChange }) {
   if (!block) {
