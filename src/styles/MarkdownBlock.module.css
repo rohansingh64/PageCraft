@@ -1,0 +1,42 @@
+.preview {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #2d2d2d;
+}
+
+.preview :global(h1),
+.preview :global(h2),
+.preview :global(h3) {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #1a1a2e;
+  margin-bottom: 0.4em;
+}
+
+.preview :global(h1) { font-size: 1.6rem; }
+.preview :global(h2) { font-size: 1.2rem; }
+.preview :global(h3) { font-size: 1rem; font-weight: 600; }
+
+.preview :global(strong) { font-weight: 700; }
+.preview :global(em)     { font-style: italic; }
+
+.preview :global(code) {
+  background: #f3f3f3;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.88em;
+}
+
+.preview :global(blockquote) {
+  border-left: 3px solid #6c63ff;
+  margin: 0;
+  padding: 6px 14px;
+  color: #666;
+  font-style: italic;
+  background: #f7f6ff;
+  border-radius: 0 6px 6px 0;
+}
+
+.preview :global(ul) { padding-left: 20px; margin: 0; }
+.preview :global(li) { margin-bottom: 4px; }

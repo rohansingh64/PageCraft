@@ -1,0 +1,47 @@
+.canvas {
+  width: 100%;
+  max-width: 720px;
+}
+
+.emptyZone {
+  width: 100%;
+  max-width: 720px;
+  border: 2px dashed #ddd;
+  border-radius: 16px;
+  padding: 64px 24px;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.emptyZone:hover {
+  border-color: #6c63ff;
+  color: #6c63ff;
+  background: #f7f6ff;
+}
+
+.emptyIcon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.tailDrop {
+  height: 56px;
+  border: 2px dashed #e8e8e8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 0.82rem;
+  margin-top: 4px;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.tailDrop.over {
+  border-color: #6c63ff;
+  color: #6c63ff;
+  background: #f7f6ff;
+}

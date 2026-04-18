@@ -1,0 +1,99 @@
+.wrapper {
+  position: relative;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  transition: box-shadow 0.15s;
+}
+
+.wrapper:hover .toolbar {
+  opacity: 1;
+}
+
+.wrapper.selected {
+  box-shadow: 0 0 0 2px #6c63ff, 0 4px 24px rgba(108, 99, 255, 0.14);
+}
+
+.inner {
+  padding: 20px 24px;
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.wrapper.selected .inner {
+  border-color: rgba(108, 99, 255, 0.15);
+}
+
+.wrapper.dragOver {
+  box-shadow: 0 0 0 2px #6c63ff40;
+}
+
+.wrapper.dragOver .inner {
+  border-color: #6c63ff40;
+  background: #f7f6ff;
+}
+
+/* ── Floating toolbar ───────────────────────────────────────────────────────── */
+
+.toolbar {
+  position: absolute;
+  top: -14px;
+  right: 10px;
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 10;
+}
+
+.wrapper.selected .toolbar {
+  opacity: 1;
+}
+
+.handle {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  color: #aaa;
+  font-size: 0.7rem;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  user-select: none;
+}
+
+.handle:active {
+  cursor: grabbing;
+}
+
+.toolBtn {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  color: #666;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+}
+
+.toolBtn:hover:not(:disabled) {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.deletBtn:hover:not(:disabled) {
+  background: #fff0f0;
+  border-color: #ffb3b3;
+  color: #e53;
+}
