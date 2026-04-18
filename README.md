@@ -11,6 +11,20 @@ PageCraft is designed to simulate a lightweight version of tools like Notion or 
 Users can build a page visually by dragging components onto a canvas and configuring them instantly.
 
 
+##  Clone Project
+
+- Download the project from github   https://github.com/rohansingh64/PageCraft
+
+- open it in vs code or any ide
+
+- go to terminal then run 
+
+   -  npm install
+
+   -  npm run dev
+
+
+
 ##  Features
 
 - Drag and drop content blocks
